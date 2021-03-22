@@ -24,3 +24,39 @@ div{
 p1 {
   margin-right: 10px
 }
+.wrapper {
+  width: 768px;
+  margin: 0 auto;
+}
+
+table {
+  width: 100%;
+  display: table;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+tr {
+  border: 1px solid #dddddd;
+}
+
+td,
+th {
+  padding: 15px 5px;
+  display: table-cell;
+  text-align: left;
+  vertical-align: middle;
+  border-radius: 2px;
+}
+
+
+/* если ширина окна меньше чем 768px, применяем правила */
+
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    width: 100%;/* растягиваем на всю ширину */
+  }
+  tr {
+    border: 1px solid #2980b9; /* меняем цвет рамки */
+  }
+}
